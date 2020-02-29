@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+}
+#main-login{
+    background-image: url('https://study-eu.s3.amazonaws.com/uploads/image/path/118/wide_fullhd_ireland-cliffs-of-moher.jpg');
+    background-size: cover;
+    padding: 350px 0;
+}
+#form {
+    width: 30%;
+    margin: auto;
+    background-color: #8ae1ea70;
+    padding: 15px;
+    border-radius: 15px;
+}
+#form .header-login {
+    color: #ffffff;
+    text-align: center;
+    font-family: sans-serif;
+    border-bottom: #ffffff 1px solid;
+}
+#form .content-login form {
+    margin-top: 25px;
+    text-align: center;
+}
+#form .content-login input {
+    width: 90%;
+    margin: 5px 0;
+    height: 25pt;
+}
+#form .content-login button {
+    width: 90%;
+    margin: 5px 0;
+    height: 25pt;
+}
+#main .
