@@ -4,37 +4,68 @@
 }
 body {
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
 }
-#main-login{
-    background-image: url('https://study-eu.s3.amazonaws.com/uploads/image/path/118/wide_fullhd_ireland-cliffs-of-moher.jpg');
+.content {
+    background-image: url('../img/bg.jpg');
     background-size: cover;
-    padding: 350px 0;
 }
-#form {
-    width: 30%;
-    margin: auto;
-    background-color: #8ae1ea70;
+#main-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #727a7b70;
     padding: 15px;
     border-radius: 15px;
 }
-#form .header-login {
+#main-login .header-login {
     color: #ffffff;
     text-align: center;
     font-family: sans-serif;
     border-bottom: #ffffff 1px solid;
 }
-#form .content-login form {
+#main-login .content-login form {
     margin-top: 25px;
     text-align: center;
 }
-#form .content-login input {
+#main-login .content-login input {
     width: 90%;
     margin: 5px 0;
     height: 25pt;
 }
-#form .content-login button {
+#main-login .content-login button {
     width: 90%;
     margin: 5px 0;
     height: 25pt;
 }
-#main .
+.menu {
+    background-color: aqua;
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    box-sizing: border-box;
+}
+.head-menu {
+    text-align: center;
+    padding: 30px 0;
+}
+.menu img {
+    width: 70%;
+    border-radius: 150px;
+}
+.menu a {
+    text-decoration: none;
+}
+.menu li {
+    background-color:#babaff;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+}
+.menu li:hover {
+    background-color: #d9d9f6;
+}
+.menu .active li {
+    background-color: #d9d9f6;
+}

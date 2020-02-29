@@ -1,19 +1,17 @@
+let body = document.body;
+body.setAttribute('class', 'content');
 let divMainLogin = document.getElementById('main-login');
-
-let divIdForm = document.createElement('div');
-divIdForm.setAttribute('id', 'form');
-divMainLogin.appendChild(divIdForm);
 
 let divIdHeader = document.createElement('div');
 divIdHeader.setAttribute('class', 'header-login');
-divIdForm.appendChild(divIdHeader);
+divMainLogin.appendChild(divIdHeader);
 let h1 = document.createElement('h1');
 h1.innerHTML = 'LOGIN';
 divIdHeader.appendChild(h1);
 
 let divIdContent = document.createElement('div');
 divIdContent.setAttribute('class', 'content-login');
-divIdForm.appendChild(divIdContent);
+divMainLogin.appendChild(divIdContent);
 let formLogin = document.createElement('form');
 formLogin.setAttribute('action', '#');
 divIdContent.appendChild(formLogin);
@@ -38,7 +36,9 @@ let inputButton = document.createElement('button');
 inputButton.innerHTML = 'Login';
 inputButton.setAttribute('onclick', 'login()');
 formLogin.appendChild(inputButton);
-
+formLogin.addEventListener("submit", function(event){
+    event.preventDefault()
+});
 function login() {
     let username = document.getElementById('username');
     let password = document.getElementById('password');
@@ -53,7 +53,7 @@ function login() {
     } else if (regexPassword.test(password.value) == false) {
         alert('Password must contain at least 1 number, 1 lowercase, 1 upercase!');
     } else {
-        window.location.href = '/home/dio/Documents/Hacktiv8/Phase 0/Exercises-Hacktiv8/Week6/Final Project/home.html'; // <-- Bagian ini
+        window.location.href = 'home.html';
     }
     
 };
